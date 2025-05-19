@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-primary: #C61F1F;
+    --color-dark: #000;
+    --color-content: #111111;
+}
+
+.container{
+    max-width: 1212px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+body {
+    background-color: black;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+  -webkit-overflow-scrolling: touch; 
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none; 
+}
+
+.scrollbar-none::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+.scrollbar-none::-webkit-scrollbar-thumb {
+  background: transparent; 
+}
+
+
